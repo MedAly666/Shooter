@@ -1,0 +1,17 @@
+{
+  "name": "shooter",
+  "private": true,
+  "scripts": {
+    "dev": "bun build ./src/index.ts --outdir ./public/js --watch",
+    "build": "bun build ./src/index.ts --outdir ./public/js",
+    "test": "bun test",
+    "lint": "bun run eslint . --ext .ts",
+    "start": "bunx serve public"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
